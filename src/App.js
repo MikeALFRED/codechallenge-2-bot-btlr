@@ -14,7 +14,7 @@ function App() {
 
 
 useEffect(()=>{
-  fetch("https://json-deploy-1-ed8i.onrender.com/bots")
+  fetch( "https://json-deploy-2-xwi9.onrender.com/bots")
   .then(res=>res.json())
   .then(data=>setBots(data))
 },[])
@@ -23,11 +23,13 @@ useEffect(()=>{
   return (
     <div className="App">
       <header>Bot Battlr</header>
+      
     <YourBotArmy armyBots={armyBots} setArmyBots={setArmyBots}/>
-      <Routes>
+            
+        <Routes>
         <Route
             exact
-            path="/"
+            path="/codechallenge-2-bot-btlr"
             element={
               <BotCollection
               setBotSpecs={setBotSpecs}

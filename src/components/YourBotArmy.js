@@ -1,6 +1,7 @@
 import React from "react";
 
 
+
 function YourBotArmy({armyBots, setArmyBots}) {
   let  displayCards=armyBots.map((bot)=>{
     return(
@@ -11,6 +12,7 @@ function YourBotArmy({armyBots, setArmyBots}) {
                 setArmyBots([...allNew]);
     }}
             >
+            
               <img src={bot.avatar_url} style={{ width: "70%" }} alt="bot" />
         <div >
           <h3 >{bot.name}</h3>
@@ -27,6 +29,7 @@ function YourBotArmy({armyBots, setArmyBots}) {
             </span>
           </div>
         </div>
+
       </li>
     );
   });   
